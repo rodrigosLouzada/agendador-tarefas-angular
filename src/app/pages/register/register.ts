@@ -10,7 +10,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
   imports: [MatCardModule, MatButtonModule, MatFormFieldModule, MatInputModule, MatSelectModule],
   templateUrl: './register.html',
   styleUrl: './register.scss',
-  encapsulation: ViewEncapsulation.Emulated
+  encapsulation: ViewEncapsulation.None
 })
 export class Register {
 
