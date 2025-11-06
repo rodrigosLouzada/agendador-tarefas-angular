@@ -12,6 +12,14 @@
                     <mat-label>Nome Completo</mat-label>
                     <input matInput formControlName="fullName" placeholder="Digite o nome Completo aqui.">
                 </mat-form-field>
+
+                @if(form.get('fullName')?.invalid && form.get('fullName')?.touched){
+                    <div>
+                    <small>O Nome completo é obrigatório</small>
+                </div>
+                }
+                
+
             </mat-card-content>
 
             <mat-card-content>
