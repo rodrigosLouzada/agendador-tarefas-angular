@@ -19,7 +19,7 @@ export class Register {
 
   constructor(private formBuilder: FormBuilder){
     this.form = this.formBuilder.group({
-      fullName: ['', [Validators.required, Validators.minLength(15)]],
+      fullName: ['', [Validators.required, Validators.minLength(3)]],
       email: ['', [Validators.required, Validators.email]],
       password: ['']
     });

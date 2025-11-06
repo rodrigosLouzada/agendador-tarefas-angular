@@ -15,15 +15,16 @@
 
                 @if(form.get('fullName')?.invalid && form.get('fullName')?.touched){
                     <div>
-                    <small>O Nome completo é obrigatório</small>
-                    <br>
+                    @if(form.get('fullName')?.errors?.['required']){
+                        <small>O Nome completo é obrigatório</small>
+                    }
+
                     @if(form.get('fullName')?.errors?.['minlength']){
                         <small>O Nome não tem o tamanho suficiente</small>
                     }
                 </div>
                 }
                 
-
             </mat-card-content>
 
             <mat-card-content>
